@@ -1,40 +1,33 @@
 import React, { useState } from "react";
+//import styles from "./styles/index.scss";
 
 //create your first component
 export function TrafficLight() {
-	const [clicked, setShadow] = useState(null);
-
-	console.log(setShadow);
-	const extraredclass = "";
-	if (setShadow == "red") extraredclass == "selected";
-	const extrayellowclass = "";
-	if (setShadow == "yellow") extraredclass == "selected";
-	const extragreenclass = "";
-	if (setShadow == "green") extraredclass == "selected";
+	const [selectedcolor, setSelectedcolor] = useState("");
 
 	return (
-		<div className="container text-center mt-5">
-			<div>
-				<div className="bodyt">
-					<div>
-						<div
-							className={`red circle ${extraredclass}`}
-							onClick={() => setShadow({ clicked: "red" })}></div>
-					</div>
-					<div>
-						<div
-							className={`yellow circle ${extrayellowclass}`}
-							onClick={() =>
-								setShadow({ clicked: "yellow" })
-							}></div>
-					</div>
-					<div>
-						<div
-							className={`green circle ${extragreenclass}`}
-							onClick={() =>
-								setShadow({ clicked: "green" })
-							}></div>
-					</div>
+		<div>
+			<div className="traffic">
+				<div>
+					<div
+						className={
+							"red circle" +
+							(selectedcolor === "red" ? " selected" : "")
+						}></div>
+				</div>
+				<div>
+					<div
+						className={
+							"yellow circle" +
+							(selectedcolor === "yellow" ? " selected" : "")
+						}></div>
+				</div>
+				<div>
+					<div
+						className={
+							"green circle" +
+							(selectedcolor === "yellow" ? " selected" : "")
+						}></div>
 				</div>
 			</div>
 		</div>
