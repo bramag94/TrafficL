@@ -7,15 +7,17 @@ import rigoImage from "../../img/rigo-baby.jpg";
 export function TrafficLight() {
 	return (
 		<div className="container text-center mt-5">
-			<div className="bodyt">
-				<div>
-					<div className="circle"></div>
-				</div>
-				<div>
-					<div className="circle"></div>
-				</div>
-				<div>
-					<div className="circle"></div>
+			<div>
+				<div className="bodyt">
+					<div>
+						<div className="circle"></div>
+					</div>
+					<div>
+						<div className="circle"></div>
+					</div>
+					<div>
+						<div className="circle"></div>
+					</div>
 				</div>
 			</div>
 		</div>
