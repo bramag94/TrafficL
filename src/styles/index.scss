@@ -11,3 +11,20 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+.bodyt {
+   width: 1000px;
+   height: 1000px;
+   background-color: black;
+   display: inline;
+   border: black solid 1px;
+
+
+}
+.circle {
+  height: 250px;
+  width: 250px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
