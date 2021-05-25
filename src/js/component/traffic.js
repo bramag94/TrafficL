@@ -6,10 +6,11 @@ export function TrafficLight() {
 	const [selectedcolor, setSelectedcolor] = useState("");
 
 	return (
-		<div>
+		<div className="container">
 			<div className="traffic">
 				<div>
 					<div
+						onClick={() => setSelectedcolor("red")}
 						className={
 							"red circle" +
 							(selectedcolor === "red" ? " selected" : "")
@@ -17,6 +18,7 @@ export function TrafficLight() {
 				</div>
 				<div>
 					<div
+						onClick={() => setSelectedcolor("yellow")}
 						className={
 							"yellow circle" +
 							(selectedcolor === "yellow" ? " selected" : "")
@@ -24,9 +26,10 @@ export function TrafficLight() {
 				</div>
 				<div>
 					<div
+						onClick={() => setSelectedcolor("green")}
 						className={
 							"green circle" +
-							(selectedcolor === "yellow" ? " selected" : "")
+							(selectedcolor === "green" ? " selected" : "")
 						}></div>
 				</div>
 			</div>
